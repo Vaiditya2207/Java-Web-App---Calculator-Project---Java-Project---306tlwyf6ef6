@@ -5,6 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+    /* author: https://codepen.io/sacsam005/pen/BaJmaXy
+Sachin Samal */
+body {
+    background: #ffa17f;
+    background: -webkit-linear-gradient(to right, #00223e, black);
+    background: linear-gradient(to right, #00223e, rgb(9, 81, 92) 50%, #00223e);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .star0 {
+    height: 1px;
+    width: 1px;
+    opacity: 1;
+    position: absolute;
+  }
+  
+  .star1 {
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+  }
+  
+  .star2 {
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+  }
+  
+  .star3 {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+  }
+
+  #heading {
+    margin-top: 1em;
+    color: #d9d1c1;
+    font-size: 6rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 200px;
+  }
+
+  .numberBox {
+    border: 1px solid rgb(164, 162, 162);
+    padding: 2em 3.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: #fbeee0;
+    color: black;
+  }
+
+  #numberBox-2 {
+    margin-bottom: 3em;
+  }
+
+  #dropDown {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 16px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-right: 1em;
+  }
+
+.button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+/*   padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 16px;
+  padding-left: 16px; */
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+
+.button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+#result {
+  margin-top: 1em;
+  color: #d9d1c1;
+  font-size: 6rem;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+#resultAnswer {
+  font-size: 2.5rem;
+  color: #fbeee0;
+  margin-bottom: 5em;
+}
+    </style>
 </head>
 <body>
     <div id="universe"></div>
