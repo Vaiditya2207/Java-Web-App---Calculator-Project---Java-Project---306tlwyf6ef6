@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Simple Calculator</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div class="calculator">
-            <h1 style="color: red;">Calculator</h1>
-            <form action="MyServlet"
-                method="POST">
-                <!-- <form action method> -->
-
-                <input type="number" name="operand1" required
-                    placeholder="Enter first number">
-                <input type="number" name="operand2" required
-                    placeholder="Enter second number">
-                <select name="operation">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="universe"></div>
+    <div class="calculator">
+        <h1 id="heading">Calculator</h1>
+        <form action="MyServlet"
+            method="POST">
+            <!-- <form action method> -->
+                <select name="operation" id="dropDown">
                     <option value="add">Add</option>
                     <option value="subtract">Subtract</option>
                     <option value="multiply">Multiply</option>
                     <option value="divide">Divide</option>
                 </select>
-                <button type="submit">Calculate</button>
-            </form>
-        </div>
-    </body>
+                <br>
+            <input type="number" name="operand1" required
+                placeholder="Enter first number">
+            <input type="number" name="operand2" required
+                placeholder="Enter second number">
+            <br>
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/polymer/3.4.1/polymer-element.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>
