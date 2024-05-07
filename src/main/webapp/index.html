@@ -10,22 +10,20 @@
     <div id="universe"></div>
     <div class="calculator">
         <h1 id="heading">Calculator</h1>
-        <form action="MyServlet"
-            method="POST">
-            <!-- <form action method> -->
-                <select name="operation" id="dropDown">
-                    <option value="add">Add</option>
-                    <option value="subtract">Subtract</option>
-                    <option value="multiply">Multiply</option>
-                    <option value="divide">Divide</option>
-                </select>
-                <br>
+        <form action="MyServlet" method="POST">
             <input type="number" name="operand1" required
-                placeholder="Enter first number">
-            <input type="number" name="operand2" required
-                placeholder="Enter second number">
+                placeholder="Enter first number" class="numberBox">
             <br>
-            <button type="submit">Calculate</button>
+            <input type="number" name="operand2" required
+                placeholder="Enter second number"  class="numberBox" id="numberBox-2">
+            <br>
+            <select name="operation" id="dropDown">
+                <option value="add">Add</option>
+                <option value="subtract">Subtract</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Divide</option>
+            </select>
+            <button type="submit" class="button">Calculate</button>
         </form>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
